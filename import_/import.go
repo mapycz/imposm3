@@ -180,6 +180,7 @@ func Import(importOpts config.Import) {
 			tagmapping.Conf.SingleIdSpace,
 			relations,
 			db, progress,
+			tagmapping.LineStringMatcher,
 			tagmapping.PolygonMatcher,
 			tagmapping.RelationMatcher,
 			tagmapping.RelationMemberMatcher,

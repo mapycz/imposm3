@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osmChange version="0.6" generator="Osmosis 0.41">
+  <create>
+    <node id="10314494" version="3" timestamp="2017-08-16T13:26:07Z" lat="51.5538108" lon="-0.0416830"/>
+    <node id="10314510" version="6" timestamp="2014-02-18T20:10:27Z" lat="51.5534939" lon="-0.0415300"/>
+    <node id="10314518" version="2" timestamp="2017-10-11T14:54:48Z" lat="51.5532398" lon="-0.0413887"/>
+    <node id="10314534" version="3" timestamp="2017-10-11T14:54:48Z" lat="51.5525855" lon="-0.0410310"/>
+    <node id="34104307" version="1" timestamp="2007-08-13T01:28:08Z" lat="51.5543518" lon="-0.0419835">
+      <tag k="created_by" v="JOSM"/>
+    </node>
+    <node id="34104308" version="4" timestamp="2015-08-13T17:29:41Z" lat="51.5550333" lon="-0.0423307"/>
+    <node id="34104311" version="2" timestamp="2015-08-13T17:29:41Z" lat="51.5556459" lon="-0.0426590"/>
+    <node id="34104312" version="3" timestamp="2015-08-13T17:29:41Z" lat="51.5562745" lon="-0.0429889"/>
+    <node id="34104314" version="4" timestamp="2015-08-13T17:29:41Z" lat="51.5573267" lon="-0.0435486"/>
+    <node id="34104359" version="4" timestamp="2017-05-19T12:31:42Z" lat="51.5515113" lon="-0.0406333"/>
+    <node id="34104368" version="2" timestamp="2008-11-17T21:14:21Z" lat="51.5513113" lon="-0.0395406"/>
+    <node id="34104372" version="3" timestamp="2015-06-20T21:29:56Z" lat="51.5514044" lon="-0.0384803"/>
+    <node id="34104373" version="3" timestamp="2014-07-25T01:39:02Z" lat="51.5512379" lon="-0.0405630"/>
+    <node id="114211544" version="2" timestamp="2007-11-14T21:37:40Z" lat="51.5508645" lon="-0.0373093"/>
+    <node id="114211545" version="8" timestamp="2015-06-20T21:29:56Z" lat="51.5494708" lon="-0.0366880"/>
+    <node id="249181139" version="4" timestamp="2017-05-19T12:31:42Z" lat="51.5516500" lon="-0.0406714"/>
+    <node id="250670377" version="15" timestamp="2008-12-20T22:05:06Z" lat="51.5473353" lon="-0.0353322"/>
+    <node id="250670794" version="3" timestamp="2008-12-20T22:05:00Z" lat="51.5475595" lon="-0.0347915"/>
+    <node id="250670795" version="5" timestamp="2017-04-12T18:16:03Z" lat="51.5476525" lon="-0.0347260"/>
+    <node id="250670796" version="4" timestamp="2017-04-12T18:16:03Z" lat="51.5477016" lon="-0.0347793"/>
+    <node id="250670797" version="3" timestamp="2008-12-20T22:05:00Z" lat="51.5480399" lon="-0.0351605"/>
+    <node id="250670798" version="3" timestamp="2008-12-20T22:05:00Z" lat="51.5482213" lon="-0.0353150"/>
+    <node id="250670799" version="3" timestamp="2008-12-20T22:05:00Z" lat="51.5483708" lon="-0.0354180"/>
+    <node id="250670800" version="5" timestamp="2015-06-20T21:29:56Z" lat="51.5496312" lon="-0.0359711"/>
+    <node id="250670894" version="5" timestamp="2017-04-12T18:16:03Z" lat="51.5476211" lon="-0.0346682"/>
+    <node id="254903572" version="3" timestamp="2015-06-20T21:29:55Z" lat="51.5514919" lon="-0.0374451"/>
+    <node id="254987609" version="4" timestamp="2009-08-02T20:49:03Z" lat="51.5563471" lon="-0.0430312"/>
+    <node id="283435908" version="3" timestamp="2015-08-13T17:29:42Z" lat="51.5572384" lon="-0.0439779"/>
+    <node id="283435910" version="2" timestamp="2014-05-21T13:50:33Z" lat="51.5572853" lon="-0.0440224"/>
+    <node id="283435914" version="3" timestamp="2015-09-21T16:27:42Z" lat="51.5583691" lon="-0.0446392"/>
+    <node id="312855931" version="3" timestamp="2015-06-20T21:29:56Z" lat="51.5514201" lon="-0.0382640"/>
+    <node id="320346160" version="4" timestamp="2018-10-05T01:38:25Z" lat="51.5473755" lon="-0.0352337"/>
+    <node id="634611159" version="2" timestamp="2015-06-20T21:29:56Z" lat="51.5499714" lon="-0.0369311"/>
+    <node id="1187773449" version="2" timestamp="2015-06-20T21:29:56Z" lat="51.5514502" lon="-0.0379642"/>
+    <node id="2978329017" version="1" timestamp="2014-07-25T01:39:02Z" lat="51.5518876" lon="-0.0407400"/>
+    <node id="3753079083" version="2" timestamp="2015-09-21T16:16:46Z" lat="51.5591101" lon="-0.0450228"/>
+    <node id="3753079084" version="1" timestamp="2015-09-21T16:14:05Z" lat="51.5592542" lon="-0.0450836"/>
+    <node id="3753079087" version="2" timestamp="2017-06-20T00:03:24Z" lat="51.5593711" lon="-0.0451249"/>
+    <node id="3753079088" version="2" timestamp="2017-06-20T00:03:24Z" lat="51.5594058" lon="-0.0451549"/>
+    <node id="3753084435" version="1" timestamp="2015-09-21T16:16:46Z" lat="51.5587416" lon="-0.0448427"/>
+    <node id="4829130886" version="1" timestamp="2017-05-01T16:51:03Z" lat="51.5514481" lon="-0.0379854"/>
+    <node id="4864112821" version="1" timestamp="2017-05-19T12:31:42Z" lat="51.5515883" lon="-0.0406757"/>
+    <node id="4864112824" version="1" timestamp="2017-05-19T12:31:42Z" lat="51.5515683" lon="-0.0406486"/>
+    <node id="4864112825" version="1" timestamp="2017-05-19T12:31:42Z" lat="51.5515917" lon="-0.0406373"/>
+    <node id="4864112826" version="1" timestamp="2017-05-19T12:31:42Z" lat="51.5516319" lon="-0.0406496"/>
+    <node id="4864112827" version="1" timestamp="2017-05-19T12:31:42Z" lat="51.5516264" lon="-0.0406840"/>
+    <node id="5955936574" version="1" timestamp="2018-10-05T01:38:25Z" lat="51.5473788" lon="-0.0353105"/>
+    <node id="5955936575" version="1" timestamp="2018-10-05T01:38:25Z" lat="51.5473913" lon="-0.0352886"/>
+    <node id="6010057431" version="1" timestamp="2018-10-24T13:25:18Z" lat="51.5495087" lon="-0.0367068">
+      <tag k="direction" v="backward"/>
+      <tag k="give_way:direction" v="backward"/>
+      <tag k="highway" v="give_way"/>
+      <tag k="source" v="survey;Bing aerial imagery"/>
+      <tag k="traffic_sign" v="GB:1003A"/>
+    </node>
+    <node id="6010057432" version="1" timestamp="2018-10-24T13:25:18Z" lat="51.5494997" lon="-0.0367025">
+      <tag k="direction" v="forward"/>
+      <tag k="maxgcweightrating:hgv" v="7.5"/>
+      <tag k="maxspeed" v="20 mph"/>
+      <tag k="source" v="survey"/>
+      <tag k="traffic_sign" v="GB:674[20 mph];GB:622.1A[7.5,Except for access]"/>
+    </node>
+    <way id="8501771" version="12" timestamp="2018-10-05T01:38:26Z" uid="322039">
+      <nd ref="34104373"/>
+      <nd ref="34104368"/>
+      <nd ref="34104372"/>
+      <nd ref="312855931"/>
+      <nd ref="4829130886"/>
+      <nd ref="1187773449"/>
+      <nd ref="254903572"/>
+      <tag k="highway" v="residential"/>
+      <tag k="maxspeed" v="20 mph"/>
+      <tag k="name" v="Ashenden Road"/>
+    </way>
+    <way id="12533450" version="21" timestamp="2018-10-24T13:25:26Z" uid="3951648">
+      <nd ref="114211545"/>
+      <nd ref="6010057432"/>
+      <nd ref="6010057431"/>
+      <nd ref="634611159"/>
+      <nd ref="114211544"/>
+      <nd ref="254903572"/>
+      <tag k="highway" v="residential"/>
+      <tag k="lit" v="yes"/>
+      <tag k="maxgcweightrating:hgv" v="7.5"/>
+      <tag k="maxspeed" v="20 mph"/>
+      <tag k="name" v="Daubeney Road"/>
+      <tag k="sidewalk" v="both"/>
+      <tag k="surface" v="asphalt"/>
+    </way>
+    <way id="23085112" version="10" timestamp="2016-03-18T13:08:15Z" uid="508">
+      <nd ref="249181139"/>
+      <nd ref="2978329017"/>
+      <nd ref="10314534"/>
+      <tag k="highway" v="residential"/>
+      <tag k="lit" v="yes"/>
+      <tag k="maxspeed" v="20 mph"/>
+      <tag k="maxweight" v="7.5"/>
+      <tag k="name" v="Glyn Road"/>
+      <tag k="postal_code" v="E5"/>
+    </way>
+    <way id="23181275" version="7" timestamp="2018-10-05T01:38:26Z" uid="322039">
+      <nd ref="250670800"/>
+      <nd ref="250670799"/>
+      <nd ref="250670798"/>
+      <nd ref="250670797"/>
+      <nd ref="250670796"/>
+      <nd ref="250670795"/>
+      <nd ref="250670894"/>
+      <nd ref="250670794"/>
+      <nd ref="320346160"/>
+      <tag k="highway" v="residential"/>
+      <tag k="maxspeed" v="20 mph"/>
+      <tag k="name" v="Mabley Street"/>
+    </way>
+    <way id="29119523" version="3" timestamp="2018-10-05T01:38:25Z" uid="322039">
+      <nd ref="250670377"/>
+      <nd ref="5955936574"/>
+      <nd ref="5955936575"/>
+      <nd ref="320346160"/>
+      <tag k="highway" v="cycleway"/>
+      <tag k="segregated" v="yes"/>
+    </way>
+    <way id="79308719" version="4" timestamp="2016-03-11T09:28:53Z" uid="508">
+      <nd ref="10314518"/>
+      <nd ref="10314510"/>
+      <tag k="highway" v="residential"/>
+      <tag k="lit" v="yes"/>
+      <tag k="maxspeed" v="20 mph"/>
+      <tag k="maxweight" v="7.5"/>
+      <tag k="name" v="Glyn Road"/>
+      <tag k="postal_code" v="E5"/>
+      <tag k="sidewalk" v="both"/>
+    </way>
+    <way id="79308734" version="5" timestamp="2016-02-19T19:01:55Z" uid="508">
+      <nd ref="10314510"/>
+      <nd ref="10314494"/>
+      <nd ref="34104307"/>
+      <nd ref="34104308"/>
+      <nd ref="34104311"/>
+      <nd ref="34104312"/>
+      <tag k="highway" v="residential"/>
+      <tag k="lit" v="yes"/>
+      <tag k="maxspeed" v="20 mph"/>
+      <tag k="maxweight" v="7.5"/>
+      <tag k="name" v="Glyn Road"/>
+      <tag k="postal_code" v="E5"/>
+      <tag k="sidewalk" v="both"/>
+    </way>
+    <way id="79308738" version="4" timestamp="2016-03-11T09:28:53Z" uid="508">
+      <nd ref="10314534"/>
+      <nd ref="10314518"/>
+      <tag k="highway" v="residential"/>
+      <tag k="lit" v="yes"/>
+      <tag k="maxspeed" v="20 mph"/>
+      <tag k="maxweight" v="7.5"/>
+      <tag k="name" v="Glyn Road"/>
+      <tag k="postal_code" v="E5"/>
+      <tag k="sidewalk" v="both"/>
+    </way>
+    <way id="223982644" version="3" timestamp="2016-02-19T19:01:54Z" uid="508">
+      <nd ref="34104312"/>
+      <nd ref="254987609"/>
+      <nd ref="34104314"/>
+      <tag k="highway" v="residential"/>
+      <tag k="lit" v="yes"/>
+      <tag k="maxspeed" v="20 mph"/>
+      <tag k="maxweight" v="7.5"/>
+      <tag k="name" v="Glyn Road"/>
+      <tag k="postal_code" v="E5"/>
+      <tag k="sidewalk" v="both"/>
+    </way>
+    <way id="235235087" version="5" timestamp="2018-09-27T13:24:57Z" uid="322039">
+      <nd ref="283435908"/>
+      <nd ref="283435910"/>
+      <nd ref="283435914"/>
+      <nd ref="3753084435"/>
+      <nd ref="3753079083"/>
+      <nd ref="3753079084"/>
+      <nd ref="3753079087"/>
+      <nd ref="3753079088"/>
+      <tag k="highway" v="cycleway"/>
+      <tag k="segregated" v="no"/>
+    </way>
+    <way id="494677844" version="2" timestamp="2018-09-27T13:24:57Z" uid="322039">
+      <nd ref="249181139"/>
+      <nd ref="4864112826"/>
+      <nd ref="4864112825"/>
+      <nd ref="4864112824"/>
+      <tag k="highway" v="cycleway"/>
+      <tag k="lit" v="yes"/>
+      <tag k="name" v="Glyn Road"/>
+      <tag k="oneway" v="yes"/>
+      <tag k="sidewalk" v="left"/>
+    </way>
+    <way id="494677847" version="2" timestamp="2018-09-27T13:24:57Z" uid="322039">
+      <nd ref="4864112824"/>
+      <nd ref="4864112821"/>
+      <nd ref="4864112827"/>
+      <nd ref="249181139"/>
+      <tag k="highway" v="cycleway"/>
+      <tag k="lit" v="yes"/>
+      <tag k="name" v="Glyn Road"/>
+      <tag k="oneway" v="yes"/>
+      <tag k="sidewalk" v="left"/>
+    </way>
+    <way id="628566820" version="1" timestamp="2018-09-27T13:24:57Z" uid="322039">
+      <nd ref="283435908"/>
+      <nd ref="34104314"/>
+      <tag k="highway" v="residential"/>
+      <tag k="lit" v="yes"/>
+      <tag k="maxspeed" v="20 mph"/>
+      <tag k="name" v="Millfields Road"/>
+      <tag k="postal_code" v="E5"/>
+      <tag k="sidewalk" v="both"/>
+    </way>
+    <way id="630809252" version="2" timestamp="2018-10-24T13:25:30Z" uid="3951648">
+      <nd ref="114211545"/>
+      <nd ref="250670800"/>
+      <tag k="highway" v="secondary"/>
+      <tag k="lit" v="yes"/>
+      <tag k="maxspeed" v="20 mph"/>
+      <tag k="name" v="Marsh Hill"/>
+      <tag k="oneway" v="no"/>
+      <tag k="ref" v="B112"/>
+      <tag k="sidewalk" v="both"/>
+      <tag k="surface" v="asphalt"/>
+    </way>
+    <way id="630809253" version="1" timestamp="2018-10-05T01:38:25Z" uid="322039">
+      <nd ref="34104373"/>
+      <nd ref="34104359"/>
+      <nd ref="4864112824"/>
+      <tag k="highway" v="residential"/>
+      <tag k="lit" v="yes"/>
+      <tag k="maxspeed" v="20 mph"/>
+      <tag k="name" v="Glyn Road"/>
+    </way>
+    <relation id="8747972" version="2" timestamp="2018-10-05T01:38:31Z" uid="322039">
+      <member type="way" ref="630809253" role=""/>
+      <member type="way" ref="494677847" role="forward"/>
+      <member type="way" ref="494677844" role="forward"/>
+      <member type="way" ref="23085112" role=""/>
+      <member type="way" ref="79308738" role=""/>
+      <member type="way" ref="79308719" role=""/>
+      <member type="way" ref="79308734" role=""/>
+      <member type="way" ref="223982644" role=""/>
+      <member type="way" ref="628566820" role=""/>
+      <member type="way" ref="235235087" role=""/>
+      <member type="way" ref="8501771" role=""/>
+      <member type="way" ref="12533450" role=""/>
+      <member type="way" ref="630809252" role=""/>
+      <member type="way" ref="23181275" role=""/>
+      <member type="way" ref="29119523" role=""/>
+      <tag k="network" v="lcn"/>
+      <tag k="route" v="bicycle"/>
+      <tag k="type" v="route"/>
+    </relation>
+  </create>
+
+  <modify>
+    <way id="27037886" version="3" timestamp="2011-10-04T10:58:33Z" uid="346">
+      <nd ref="937599369"/>
+      <nd ref="937599682"/>
+      <nd ref="296370236"/>
+      <nd ref="296370233"/>
+      <nd ref="937599369"/>
+      <tag k="building" v="residential"/>
+    </way>
+  </modify>
+</osmChange>

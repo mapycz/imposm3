@@ -1,6 +1,7 @@
 package writer
 
 import (
+	"errors"
 	"sync"
 	"time"
 
@@ -19,6 +20,7 @@ type RelationWriter struct {
 	OsmElemWriter
 	singleIdSpace         bool
 	rel                   chan *element.Relation
+	lineMatcher           mapping.RelWayMatcher
 	polygonMatcher        mapping.RelWayMatcher
 	relationMatcher       mapping.RelationMatcher
 	relationMemberMatcher mapping.RelationMatcher
@@ -32,7 +34,8 @@ func NewRelationWriter(
 	rel chan *element.Relation,
 	inserter database.Inserter,
 	progress *stats.Statistics,
-	matcher mapping.RelWayMatcher,
+	lineMatcher mapping.RelWayMatcher,
+	polygonMatcher mapping.RelWayMatcher,
 	relMatcher mapping.RelationMatcher,
 	relMemberMatcher mapping.RelationMatcher,
 	srid int,
@@ -51,7 +54,8 @@ func NewRelationWriter(
 			srid:      srid,
 		},
 		singleIdSpace:         singleIdSpace,
-		polygonMatcher:        matcher,
+		lineMatcher:           lineMatcher,
+		polygonMatcher:        polygonMatcher,
 		relationMatcher:       relMatcher,
 		relationMemberMatcher: relMemberMatcher,
 		rel:    rel,
@@ -113,6 +117,9 @@ NextRel:
 		if handleMultiPolygon(rw, r, geos) {
 			inserted = true
 		}
+		if handleMultiLinestring(rw, r, geos) {
+			inserted = true
+		}
 
 		if inserted && rw.diffCache != nil {
 			rw.diffCache.Ways.AddFromMembers(r.Id, allMembers)
@@ -161,6 +168,45 @@ func handleMultiPolygon(rw *RelationWriter, r *element.Relation, geos *geosp.Geo
 		return false
 	}
 
+	return clipAndInsertGeom(geom, rw, r, matches, geos, rw.inserter.InsertPolygon)
+}
+
+func handleMultiLinestring(rw *RelationWriter, r *element.Relation, geos *geosp.Geos) bool {
+	matches := rw.lineMatcher.MatchRelation(r)
+	if matches == nil {
+		return false
+	}
+
+	geosGeom, err := geomp.BuildMultiLinestring(r, rw.srid)
+
+	if err != nil {
+		if errl, ok := err.(ErrorLevel); !ok || errl.Level() > 0 {
+			log.Println("[warn]: ", err)
+		}
+		return false
+	}
+
+	wkb := geos.AsEwkbHex(geosGeom)
+	if wkb == nil {
+		log.Println("[warn]: ", errors.New("unable to create WKB for relation"))
+		return false
+	}
+
+	geom := geomp.Geometry{Geom: geosGeom, Wkb: wkb}
+
+	return clipAndInsertGeom(geom, rw, r, matches, geos, rw.inserter.InsertLineString)
+}
+
+type insertGeom func(element.OSMElem, geomp.Geometry, []mapping.Match) error
+
+func clipAndInsertGeom(
+	geom geomp.Geometry,
+	rw *RelationWriter,
+	r *element.Relation,
+	matches []mapping.Match,
+	geos *geosp.Geos,
+	insertFunc insertGeom,
+) bool {
 	if rw.limiter != nil {
 		start := time.Now()
 		parts, err := rw.limiter.Clip(geom.Geom)
@@ -178,7 +224,7 @@ func handleMultiPolygon(rw *RelationWriter, r *element.Relation, geos *geosp.Geo
 			rel := element.Relation(*r)
 			rel.Id = rw.relId(r.Id)
 			geom = geomp.Geometry{Geom: g, Wkb: geos.AsEwkbHex(g)}
-			err := rw.inserter.InsertPolygon(rel.OSMElem, geom, matches)
+			err := insertFunc(rel.OSMElem, geom, matches)
 			if err != nil {
 				if errl, ok := err.(ErrorLevel); !ok || errl.Level() > 0 {
 					log.Println("[warn]: ", err)
@@ -189,7 +235,7 @@ func handleMultiPolygon(rw *RelationWriter, r *element.Relation, geos *geosp.Geo
 	} else {
 		rel := element.Relation(*r)
 		rel.Id = rw.relId(r.Id)
-		err := rw.inserter.InsertPolygon(rel.OSMElem, geom, matches)
+		err := insertFunc(rel.OSMElem, geom, matches)
 		if err != nil {
 			if errl, ok := err.(ErrorLevel); !ok || errl.Level() > 0 {
 				log.Println("[warn]: ", err)
